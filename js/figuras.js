@@ -45,3 +45,41 @@ console.group("Circulo");
     }
 console.groupEnd();
 //codigo del Circulo
+
+//interaccion html 
+function CalcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = PerimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function CalcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = AreaCuadrado(value);
+    alert(area);
+}
+/*triangle*/
+function CalcularPerimetroTriangulo(){
+    const inputBase = document.getElementById("InputTrianguloBase");
+    const base = Number(inputBase.value);
+    const inputLado1 = document.getElementById("InputTrianguloLado1");
+    const value1 = Number(inputLado1.value);
+    const inputLado2 = document.getElementById("InputTrianguloLado2");
+    const value2 = Number(inputLado2.value);
+
+    const perimetro = PerimetroTriangulo(base,value1,value2);
+    alert(perimetro);
+}
+function CalcularAreaTriangulo(){
+    const inputBase = document.getElementById("InputTrianguloBase1");
+    const base = Number(inputBase.value);
+    const inputAltura = document.getElementById("InputTrianguloAltura");
+    const altura = Number(inputAltura.value);
+
+    const area = AreaTriangulo(base,altura);
+    alert(area);
+}

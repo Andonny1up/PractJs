@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/figuras.css">
     <title>Figuras geometricas</title>
 </head>
 <body>
+    <header>
+        <h1>Figuras geom&eacute;tricas</h1>
+    </header>
     <main>
-        <h1>Figuras geometricas</h1>
+        <section>
+            <h2 class="heading">Primer taller del <span>curso pr&aacute;ctico</span> de JS</h2>
+            <form action="" class="card">
+                <h3>Cuadrado</h3>
+                <label for="InputCuadrado">Escribe cuando mide el lado de tu cuadrado:</label>
+                <input id="InputCuadrado" type="number" placeholder="0.00">
+                <button class="btn"type="button" onclick="CalcularPerimetroCuadrado()">Calcular el per&iacute;metro</button>
+                <button class="btn"type="button" onclick="CalcularAreaCuadrado()">Calcular el &aacute;rea</button>
+            </form>
+            <form action="" class="card">
+                <h3>Triangulo</h3>
+                <label for="InputTrianguloBase">Base:</label>
+                <input id="InputTrianguloBase" type="number" placeholder="0.00">
+                <label for="InputTrianguloLado1">Lado1:</label>
+                <input id="InputTrianguloLado1" type="number" placeholder="0.00">
+                <label for="InputTrianguloLado2">Lado2:</label>
+                <input id="InputTrianguloLado2" type="number" placeholder="0.00">
+                <button class="btn"type="button" onclick="CalcularPerimetroTriangulo()">Calcular el per&iacute;metro</button>
+                <label for="InputTrianguloBase1">Base:</label>
+                <input id="InputTrianguloBase1" type="number" placeholder="0.00">
+                <label for="InputTrianguloAltura">Altura:</label>
+                <input id="InputTrianguloAltura" type="number" placeholder="0.00">
+                <button class="btn"type="button" onclick="CalcularAreaTriangulo()">Calcular el &aacute;rea</button>
+            </form>
+            <form action="" class="card">
+                <h3>Circulo</h3>
+                <label for="InputCuadrado">Escribe cuando mide el lado de tu cuadrado:</label>
+                <input id="InputCuadrado" type="number" placeholder="0.00">
+                <button class="btn"type="button" onclick="CalcularPerimetroCuadrado()">Calcular el per&iacute;metro</button>
+                <button class="btn"type="button" onclick="CalcularAreaCuadrado()">Calcular el &aacute;rea</button>
+            </form>
+        </section>
     </main>
     <script src="./js/figuras.js"></script>
 </body>
